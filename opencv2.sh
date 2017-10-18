@@ -7,6 +7,7 @@ wget -O opencv.zip https://github.com/opencv/opencv/archive/2.4.13.4.zip
 unzip opencv.zip
 cd ~/opencv-2.4.13.4
 mkdir build
-cd build cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local ..
+cd build
+cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local ..
 make -j3
 sudo make install
