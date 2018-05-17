@@ -8,5 +8,6 @@ Set-up files
 
 ## Lanzo LCD Installation for Raspberry Pi
 ```
-    bash install_lanzo_lcd.sh
+    chmod u+x install_lanzo_lcd.sh
+    ./install_lanzo_lcd.sh
 ```
