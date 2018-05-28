@@ -5,4 +5,7 @@ install:
 
 export:
 	env/bin/pip freeze > requirements.txt
+	
+clean:
+    rm -f *.pyc
 
