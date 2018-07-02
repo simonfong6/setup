@@ -10,7 +10,7 @@ class GenericPython:
     def __init__(self):
         pass
 
-def _main():
+def _main(args):
     from sys import argv
     if(len(argv) < 2):
         print("Not enough arguments.")
@@ -19,4 +19,8 @@ def _main():
     
     
 if(__name__ == '__main__'):
-    _main()
+	import argparse
+    parser = argparse.ArgumentParser()
+    args = parser.parse_args()
+    _main(args)
+
